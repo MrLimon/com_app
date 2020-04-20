@@ -20,4 +20,5 @@ before_install:
 - sfdx force:auth:jwt:grant --clientid $CONSUMERKEY --jwtkeyfile assets/server.key
   --username $USERNAME --setdefaultdevhubusername -a HubOrg
 script:
-- sfdx force:source:deploy --targetusername HubOrg --testlevel RunLocalTests --ignorewarnings --sourcepath ./force-app 
+- sfdx force:source:deploy --targetusername HubOrg --testlevel NoTestRun --ignorewarnings
+  --sourcepath ./force-app --apiversion 47.0
