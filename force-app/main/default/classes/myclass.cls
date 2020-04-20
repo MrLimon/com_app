@@ -1,4 +1,5 @@
 public with sharing class myclass {
+//TEST COMMENT
 	public myclass() {
 
 	}
