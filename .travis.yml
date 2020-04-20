@@ -21,4 +21,4 @@ before_install:
   --username $USERNAME --setdefaultdevhubusername -a HubOrg
 script:
 - sfdx force:source:deploy --targetusername HubOrg --testlevel RunLocalTests --ignorewarnings
-  --sourcepath ./force-app
+  --sourcepath ./force-app --apiversion 47.0
